@@ -126,10 +126,10 @@
       "PACKAGE_NAME": "com.company.game"
     },
     "cordova-plugin-exit": {
-      "PACKAGE_NAME": "com.company.gamename"
+      "PACKAGE_NAME": "com.teacoff.puzzleblockwild"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.company.gamename"
+      "PACKAGE_NAME": "com.teacoff.puzzleblockwild"
     }
   },
   "dependent_plugins": {},

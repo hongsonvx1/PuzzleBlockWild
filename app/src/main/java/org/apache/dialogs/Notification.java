@@ -31,7 +31,7 @@ import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
 
-import com.company.gamename.MainActivity;
+import com.teacoff.puzzleblockwild.MainActivity;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;

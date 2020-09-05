@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.company.gamename;
+package com.teacoff.puzzleblockwild;
 
 import android.os.Bundle;
 
