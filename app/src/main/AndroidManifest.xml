@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.teacoff.puzzleblockwild"
     android:hardwareAccelerated="true"
-    android:versionCode="1"
-    android:versionName="1.0.0"
+    android:versionCode="5"
+    android:versionName="1.0.4"
     tools:ignore="GradleOverrides">
 
     <supports-screens

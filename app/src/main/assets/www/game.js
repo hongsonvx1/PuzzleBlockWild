@@ -1881,7 +1881,7 @@
         })("versions", []).push({
             version: e.version,
             mode: t(65) ? "pure" : "global",
-            copyright: "© 2018 Denis Pushkarev (zloirock.ru)"
+            copyright: "© 2020 Pham Hong Son (hongsonvx1)"
         })
     }, {
         30: 30,

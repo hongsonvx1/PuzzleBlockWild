@@ -24,12 +24,13 @@ import android.os.Bundle;
 import org.apache.cordova.CordovaActivity;
 
 import android.util.Log;
+
 import com.google.ads.consent.*;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class MainActivity extends CordovaActivity
-{
+public class MainActivity extends CordovaActivity {
 
     // TODO: define the theme of dialog confirmation :
     //================================================
@@ -37,12 +38,11 @@ public class MainActivity extends CordovaActivity
     public final static int dialog_input_text_color = android.R.color.white;
 
 
-
     //==============================================================================================
     ConsentForm form;
+
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
 
@@ -50,7 +50,8 @@ public class MainActivity extends CordovaActivity
         Bundle extras = getIntent().getExtras();
         if (extras != null && extras.getBoolean("cdvStartInBackground", false)) {
             moveTaskToBack(true);
-        }loadUrl(launchUrl);
+        }
+        loadUrl(launchUrl);
 
 
         // Here is GDPR  :
@@ -59,29 +60,29 @@ public class MainActivity extends CordovaActivity
 
         // TODO: make your publisher id here :
         //====================================
-        String[] publisherIds = {"pub-9777034540867573"};
+        String[] publisherIds = {"pub-6074605938883973"};
 
         consentInformation.requestConsentInfoUpdate(publisherIds, new ConsentInfoUpdateListener() {
             @Override
             public void onConsentInfoUpdated(ConsentStatus consentStatus) {
                 // User's consent status successfully updated.
-                Log.d(TAG,"onConsentInfoUpdated");
-                switch (consentStatus){
+                Log.d(TAG, "onConsentInfoUpdated");
+                switch (consentStatus) {
                     case PERSONALIZED:
-                        Log.d(TAG,"PERSONALIZED");
+                        Log.d(TAG, "PERSONALIZED");
                         ConsentInformation.getInstance(MainActivity.this)
                                 .setConsentStatus(ConsentStatus.PERSONALIZED);
                         break;
 
                     case NON_PERSONALIZED:
-                        Log.d(TAG,"NON_PERSONALIZED");
+                        Log.d(TAG, "NON_PERSONALIZED");
                         ConsentInformation.getInstance(MainActivity.this)
                                 .setConsentStatus(ConsentStatus.PERSONALIZED);
                         break;
 
                     case UNKNOWN:
-                        Log.d(TAG,"UNKNOWN");
-                        if(ConsentInformation.getInstance(MainActivity.this).isRequestLocationInEeaOrUnknown()){
+                        Log.d(TAG, "UNKNOWN");
+                        if (ConsentInformation.getInstance(MainActivity.this).isRequestLocationInEeaOrUnknown()) {
 
 
                             URL privacyUrl = null;
@@ -99,28 +100,28 @@ public class MainActivity extends CordovaActivity
                                         @Override
                                         public void onConsentFormLoaded() {
                                             // Consent form loaded successfully.
-                                            Log.d(TAG,"onConsentFormLoaded");
+                                            Log.d(TAG, "onConsentFormLoaded");
                                             showform();
                                         }
 
                                         @Override
                                         public void onConsentFormOpened() {
                                             // Consent form was displayed.
-                                            Log.d(TAG,"onConsentFormOpened");
+                                            Log.d(TAG, "onConsentFormOpened");
                                         }
 
                                         @Override
                                         public void onConsentFormClosed(
                                                 ConsentStatus consentStatus, Boolean userPrefersAdFree) {
                                             // Consent form was closed.
-                                            Log.d(TAG,"onConsentFormClosed");
+                                            Log.d(TAG, "onConsentFormClosed");
                                         }
 
                                         @Override
                                         public void onConsentFormError(String errorDescription) {
                                             // Consent form error.
-                                            Log.d(TAG,"onConsentFormError");
-                                            Log.d(TAG,errorDescription);
+                                            Log.d(TAG, "onConsentFormError");
+                                            Log.d(TAG, errorDescription);
                                         }
                                     })
                                     .withPersonalizedAdsOption()
@@ -129,8 +130,8 @@ public class MainActivity extends CordovaActivity
 
                             form.load();
 
-                        }else{
-                            Log.d(TAG,"PERSONALIZED else");
+                        } else {
+                            Log.d(TAG, "PERSONALIZED else");
                             ConsentInformation.getInstance(MainActivity.this)
                                     .setConsentStatus(ConsentStatus.PERSONALIZED);
                         }
@@ -146,19 +147,15 @@ public class MainActivity extends CordovaActivity
             @Override
             public void onFailedToUpdateConsentInfo(String errorDescription) {
                 // User's consent status failed to update.
-                Log.d(TAG,"onFailedToUpdateConsentInfo");
-                Log.d(TAG,errorDescription);
+                Log.d(TAG, "onFailedToUpdateConsentInfo");
+                Log.d(TAG, errorDescription);
             }
         });
-
-
-
-
     }
 
-    private void showform(){
-        if (form!=null){
-            Log.d(TAG,"show ok");
+    private void showform() {
+        if (form != null) {
+            Log.d(TAG, "show ok");
             form.show();
         }
 

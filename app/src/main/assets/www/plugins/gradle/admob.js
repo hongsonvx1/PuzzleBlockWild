@@ -31,12 +31,12 @@ class GradleAdmob{
                     isTesting: true,
                     autoShow: false
                 });
-				/*
+
 				admob.rewardvideo.config({
                     id: gradle.rewardvideo,
                     isTesting: true
                 });
-				*/
+
             }
             else{
                 admob.banner.config({
@@ -52,11 +52,10 @@ class GradleAdmob{
                     id: gradle.interstitial,
                     autoShow: false,
                 });
-				/*
+
 				admob.rewardvideo.config({
                     id: gradle.rewardvideo
                 });
-				*/
             }
         }
         

@@ -11,10 +11,10 @@ copyright @2012-2020
 	properties(){
 		//Ads information
 		//===============
-		this.banner             = 'ca-app-pub-3940256099942544/6300978111';      //id placement banner
-		this.interstitial       = 'ca-app-pub-3940256099942544/1033173712';      //id placement interstitial
+		this.banner             = 'ca-app-pub-6074605938883973/3601238088';      //id placement banner
+		this.interstitial       = 'ca-app-pub-6074605938883973/4479205480';      //id placement interstitial
 		
-		this.isTesting          = true; 		//Ads mode testing. set to false for a production mode.
+		this.isTesting          = false; 		//Ads mode testing. set to false for a production mode.
 		this.enableBanner       = true; 		//Ads enable the banner. set to false to disable the banner.
 		this.enableInterstitial = true; 		//Ads enable the interstitial. set to false to disable all interstitials.
 		
@@ -36,10 +36,10 @@ copyright @2012-2020
     do_event(ev, msg){switch(ev){
 		
 		case 'first_start':   //First start
-                //gradle.showInter();
+                gradle.showInter();
                 break;
 			case 'SCREEN_LEVEL':
-                //gradle.showInter();
+                gradle.showInter();
                 break;
 			case 'EVENT_TOTALSCORE':
                 gradle.showInter();
@@ -49,10 +49,10 @@ copyright @2012-2020
                 //gradle.checkInterval() && gradle.showInter(); // <-- we check the interval if ok we show interstitial
                 break;
 			case 'SCREEN_OTHER':
-                //gradle.showInter();
+                gradle.showInter();
                 break;
 			case 'SCREEN_CREDITS':
-                //gradle.showInter();
+                gradle.showInter();
                 break;
 			case 'test':
 				//gradle.checkInterval() && gradle.showInter();

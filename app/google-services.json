@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "141750952393",
-    "firebase_url": "https://testcloud-fe390.firebaseio.com",
-    "project_id": "testcloud-fe390",
-    "storage_bucket": "testcloud-fe390.appspot.com"
+    "project_number": "203243490207",
+    "firebase_url": "https://puzzleblockwild.firebaseio.com",
+    "project_id": "puzzleblockwild",
+    "storage_bucket": "puzzleblockwild.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:141750952393:android:ea98b56066fcfbed924818",
+        "mobilesdk_app_id": "1:203243490207:android:061bfe9be51f5b37c5cbaa",
         "android_client_info": {
           "package_name": "com.teacoff.puzzleblockwild"
         }
       },
       "oauth_client": [
         {
-          "client_id": "141750952393-5ka4q8538gjinlf4esgia4jof5o9467g.apps.googleusercontent.com",
+          "client_id": "203243490207-7dmftfib83hgjqofrg8n9b3n85n4cv6d.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCaC3vgYgmKbaV5NrpG3FYrzei2U0Jc_2g"
+          "current_key": "AIzaSyDGDsQHKS01JkN41RD8LJ76H3ejOX2WCEs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "141750952393-5ka4q8538gjinlf4esgia4jof5o9467g.apps.googleusercontent.com",
+              "client_id": "203243490207-7dmftfib83hgjqofrg8n9b3n85n4cv6d.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

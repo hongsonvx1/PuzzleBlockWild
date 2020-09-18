@@ -57,7 +57,7 @@ public class AdMobConfig {
 
     // Banner
     private static final String ADMOB_BANNER_ID = "ca-app-pub-6074605938883973/3601238088";
-    private String bannerAdUnitId = "";
+    private String bannerAdUnitId = "ca-app-pub-6074605938883973/3601238088";
     public AdSize adSize = AdSize.SMART_BANNER;
     /**
      * Whether or not the ad should be positioned at top or bottom of screen.
@@ -71,11 +71,11 @@ public class AdMobConfig {
 
     // Interstial
     private static final String ADMOB_INTERSTITIAL_ID = "ca-app-pub-6074605938883973/4479205480";
-    private String interstitialAdUnitId = "";
+    private String interstitialAdUnitId = "ca-app-pub-6074605938883973/4479205480";
 
     // Reward Video
     private static final String ADMOB_REWARDED_VIDEO_ID = "ca-app-pub-6074605938883973/2635447258";
-    private String rewardVideoId = "";
+    private String rewardVideoId = "ca-app-pub-6074605938883973/2635447258";
 
 
     public void setOptions(JSONObject options) {

@@ -160,7 +160,7 @@ public class AdMob extends CordovaPlugin {
         AdRequest.Builder builder = new AdRequest.Builder();
 
         if (config.isTesting || isRunningInTestLab()) {
-            //builder = builder.addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice(getDeviceId());
+            builder = builder.addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice(getDeviceId());
         }
 
         if (config.testDeviceList != null) {

@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.teacoff.puzzleblockwild" version="1.0.0">
-    <name>game</name>
+    <name>Puzzle Block Wild</name>
     <description>
-        A great game.
+        Simply drag and drop the block shapes onto the grid in order to create vertical or horizontal lines and earn as many points as possible. Only full lines will be destroyed, so plan ahead and keep an eye on the available pieces. The game is over if there’s no space left on the grid to place a block.
     </description>
-    <author email="gradlecode@outlook.com" href="https://sites.google.com/view/gradlegames/">
-        Gradle Team
+    <author email="hongsonvx1@gmail.com" href="https://sites.google.com/view/gradlegames/">
+        Mountains
     </author>
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-    <allow-intent href="market:*" />
+    <allow-intent href="market://details?id=com.teacoff.puzzleblockwild" />
     <content src="index.html" />
     <preference name="Fullscreen" value="true" />
     <preference name="AndroidLaunchMode" value="singleTask" />
